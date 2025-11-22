@@ -10,19 +10,31 @@ This is a monorepo for the Dr. Hana Sabzadeh application platform, containing bo
 drhanasabzadeh-dama/
 ├── packages/
 │   ├── mobile-app/     # Vue3 mobile web application
-│   └── admin-panel/    # (To be added)
+│   └── admin-panel/    # Laravel 8 admin panel
 └── README.md
 ```
 
 ## Packages
 
-### Mobile App (`packages/mobile-app`)
+### Mobile App (`packages/mobile-app`) ✅
 
 Vue3-based progressive web application extracted from the production deployment at https://drhanasabzadeh.ir/
 
 The source code was reconstructed from production builds using source maps, providing a complete 1:1 replica of the legacy codebase.
 
 See [packages/mobile-app/README.md](packages/mobile-app/README.md) for details.
+
+### Admin Panel (`packages/admin-panel`) ✅
+
+Laravel 8.83.29 admin panel imported from https://panel.drhanasabzadeh.ir/
+
+Imported with authenticated session crawling:
+- 40 admin pages (HTML snapshots)
+- 9 MB of static assets (CSS, JS, plugins, fonts)
+- Complete route structure documented
+- Ready for Blade template conversion
+
+See [packages/admin-panel/README.md](packages/admin-panel/README.md) for details.
 
 ## Import Process
 

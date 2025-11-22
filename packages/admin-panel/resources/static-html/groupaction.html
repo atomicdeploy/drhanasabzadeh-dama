@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html direction="rtl" dir="rtl" style="direction: rtl" >
+<!--begin::Head-->
+<head>
+    <meta charset="utf-8"/>
+    <title>پنل مدیریت</title>
+    <meta name="description" content="Aside light theme example"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!--begin::Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>        <!--end::Fonts-->
+
+    <!--begin::Page Vendors Styles(used by this page)-->
+
+    <!--end::Page Vendors Styles-->
+
+
+    <!--begin::Global تم Styles(used by all pages)-->
+    <link href="https://panel.drhanasabzadeh.ir/adminassets/plugins/global/plugins.bundle.rtl.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+    <link href="https://panel.drhanasabzadeh.ir/adminassets/plugins/custom/prismjs/prismjs.bundle.rtl.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+    <link href="https://panel.drhanasabzadeh.ir/adminassets/css/style.bundle.rtl.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+    <!--end::Global تم Styles-->
+
+    <!--begin::چیدمان تم ها(used by all pages)-->
+
+    <link href="https://panel.drhanasabzadeh.ir/adminassets/css/themes/layout/header/base/light.rtl.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+    <link href="https://panel.drhanasabzadeh.ir/adminassets/css/themes/layout/header/menu/light.rtl.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+    <link href="https://panel.drhanasabzadeh.ir/adminassets/css/themes/layout/brand/light.rtl.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+    <link href="https://panel.drhanasabzadeh.ir/adminassets/css/themes/layout/aside/light.rtl.css?v=7.0.6" rel="stylesheet" type="text/css"/>        <!--end::چیدمان تم ها-->
+
+    <link rel="shortcut icon" href="https://panel.drhanasabzadeh.ir/adminassets/media/logos/favicon.ico"/>
+    <link rel="stylesheet" href="https://panel.drhanasabzadeh.ir/adminassets/js/fontawesome-pro-6.1.1-web/css/all.min.css">
+    <script>
+        var forcepicchek=0;
+    </script>
+
+    <!-- FOOTER -->
+    <!--begin::Global Config(global config for global جی اس scripts)-->
+    <script>
+        var KTAppSettings  = {
+            "breakpoints": {
+                "sm": 576,
+                "md": 768,
+                "lg": 992,
+                "xl": 1200,
+                "xxl": 1400
+            },
+            "colors": {
+                "theme": {
+                    "base": {
+                        "white": "#ffffff",
+                        "primary": "#3699FF",
+                        "secondary": "#E5EAEE",
+                        "success": "#1BC5BD",
+                        "info": "#8950FC",
+                        "warning": "#FFA800",
+                        "danger": "#F64E60",
+                        "light": "#E4E6EF",
+                        "dark": "#181C32"
+                    },
+                    "light": {
+                        "white": "#ffffff",
+                        "primary": "#E1F0FF",
+                        "secondary": "#EBEDF3",
+                        "success": "#C9F7F5",
+                        "info": "#EEE5FF",
+                        "warning": "#FFF4DE",
+                        "danger": "#FFE2E5",
+                        "light": "#F3F6F9",
+                        "dark": "#D6D6E0"
+                    },
+                    "inverse": {
+                        "white": "#ffffff",
+                        "primary": "#ffffff",
+                        "secondary": "#3F4254",
+                        "success": "#ffffff",
+                        "info": "#ffffff",
+                        "warning": "#ffffff",
+                        "danger": "#ffffff",
+                        "light": "#464E5F",
+                        "dark": "#ffffff"
+                    }
+                },
+                "gray": {
+                    "gray-100": "#F3F6F9",
+                    "gray-200": "#EBEDF3",
+                    "gray-300": "#E4E6EF",
+                    "gray-400": "#D1D3E0",
+                    "gray-500": "#B5B5C3",
+                    "gray-600": "#7E8299",
+                    "gray-700": "#5E6278",
+                    "gray-800": "#3F4254",
+                    "gray-900": "#181C32"
+                }
+            },
+            "font-family": "Poppins"
+        };
+    </script>
+    <!--end::Global Config-->
+
+    <!--begin::Global تم Bundle(used by all pages)-->
+    <script src="https://panel.drhanasabzadeh.ir/adminassets/plugins/global/plugins.bundle.js?v=7.0.6"></script>
+    <script src="https://panel.drhanasabzadeh.ir/adminassets/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.6"></script>
+    <script src="https://panel.drhanasabzadeh.ir/adminassets/js/scripts.bundle.js?v=7.0.6"></script>
+    <!--end::Global تم Bundle-->
+    <script src="https://panel.drhanasabzadeh.ir/adminassets/kamadatepicker/kamadatepicker.min.js"></script>
+    <script src="https://panel.drhanasabzadeh.ir/adminassets/kamadatepicker/kamadatepicker.holidays.js"></script>
+    <!--begin::Page Vendors(used by this page)-->
+    <script src="https://panel.drhanasabzadeh.ir/adminassets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=7.0.6"></script>
+
+    <script src="https://panel.drhanasabzadeh.ir/adminassets/plugins/custom/gmaps/gmaps.js?v=7.0.6"></script>
+    <!--end::Page Vendors-->
+
+    <!--begin::Page Scripts(used by this page)-->
+    <script src="https://panel.drhanasabzadeh.ir/adminassets/js/pages/widgets.js?v=7.0.6"></script>
+    <script src="https://panel.drhanasabzadeh.ir/adminassets/js/pages/crud/forms/widgets/bootstrap-timepicker.js"></script>
+
+    <script src="https://panel.drhanasabzadeh.ir/adminassets/js/pages/crud/file-upload/dropzonejs.js?v=7.0.6"></script>
+    <!--begin::Page Scripts(used by this page)-->
+    <script src="https://panel.drhanasabzadeh.ir/assets/js/pages/crud/ktdatatable/base/html-table.js?v=7.0.6"></script>
+
+    <!--end::Page Scripts-->
+    <script src="https://panel.drhanasabzadeh.ir/assets/js/pages/crud/forms/widgets/select2.js"></script>
+    <script src="https://panel.drhanasabzadeh.ir/assets/js/pages/crud/forms/validation/form-controls.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            (function() {
+                'use strict';
+                var form = document.querySelector('.myvalid');
+                if (form !== null) {
+                    form.addEventListener('submit', function(event) {
+
+                        var filename = document.getElementById("filename");
+
+                        if(filename){
+                            var fileOrExam = document.getElementById("fileOrExam");
+                            var vfile = document.getElementById("validfile");
+                            if(fileOrExam){
+                                if(vfile && filename.value==='' && fileOrExam.value=='0'){
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                    alert('فایل بارگذاری نشده است');
+                                }
+                            }
+                            else if(vfile && filename.value===''){
+                                event.preventDefault();
+                                event.stopPropagation();
+                                alert('فایل بارگذاری نشده است');
+                            }
+
+                        }
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                }
+            })();
+        });
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="https://panel.drhanasabzadeh.ir/adminassets/kamadatepicker/kamadatepicker.min.css" />
+
+
+</head>
+<!--end::Head-->
+
+<!--begin::Body-->
+<body  id="kt_body"  class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed aside-minimize-hoverable page-loading"  >
+
+<!--begin::Main-->
+<!--begin::Header Mobile-->
+<div id="kt_header_mobile" class="header-mobile align-items-center  header-mobile-fixed " >
+    <!--begin::Logo-->
+    <a href="https://panel.drhanasabzadeh.ir/admin/dashboard">
+                <img height="35px" alt="Logo" src="https://panel.drhanasabzadeh.ir/images/apps/T9d3d31729765570.png"/>
+    </a>
+    <!--end::Logo-->
+
+    <!--begin::Toolbar-->
+    <div class="d-flex align-items-center">
+        <!--begin::Aside Mobile Toggle-->
+        <button class="btn p-0 burger-icon burger-icon-left" id="kt_aside_mobile_toggle">
+            <span></span>
+        </button>
+        <!--end::Aside Mobile Toggle-->
+
+        <!--begin::Header Menu Mobile Toggle-->
+        <button class="btn p-0 burger-icon ml-4" id="kt_header_mobile_toggle">
+            <span></span>
+        </button>
+        <!--end::Header Menu Mobile Toggle-->
+
+        <!--begin::Topbar Mobile Toggle-->
+        <button class="btn btn-hover-text-primary p-0 ml-2" id="kt_header_mobile_topbar_toggle">
+			<span class="svg-icon svg-icon-xl"><!--begin::Svg Icon | path:adminassets/media/svg/icons/عمومی/User.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+        <path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
+    </g>
+</svg><!--end::Svg Icon--></span>		</button>
+        <!--end::Topbar Mobile Toggle-->
+    </div>
+    <!--end::Toolbar-->
+</div>
+<!--end::Header Mobile-->
+<div class="d-flex flex-column flex-root">
+    <!--begin::Page-->
+    <div class="d-flex flex-row flex-column-fluid page">
+
+        <script>
+    function openNewURLInTheSameWindow(targetURL) {
+        var a = document.createElement('a');
+        a.href = targetURL;
+        fireClickEvent(a);
+    }
+</script>
+<!--begin::Aside-->
+<div class="aside aside-left  aside-fixed  d-flex flex-column flex-row-auto" id="kt_aside">
+    <!--begin::Brand-->
+    <div class="brand flex-column-auto " id="kt_brand">
+        <!--begin::Logo-->
+        <a href="#" class="brand-logo">
+            <h5 style="font-weight: bold;color: black;margin-top: 8px;">پنل مدیریت</h5>
+        </a>
+        <!--end::Logo-->
+
+        <!--begin::Toggle-->
+        <button class="brand-toggle btn btn-sm px-0" id="kt_aside_toggle">
+				<span class="svg-icon svg-icon svg-icon-xl"><!--begin::Svg Icon | path:adminassets/media/svg/icons/Navigation/Angle-double-left.svg--><svg
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                        height="24px" viewBox="0 0 24 24" version="1.1">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path
+            d="M5.29288961,6.70710318 C4.90236532,6.31657888 4.90236532,5.68341391 5.29288961,5.29288961 C5.68341391,4.90236532 6.31657888,4.90236532 6.70710318,5.29288961 L12.7071032,11.2928896 C13.0856821,11.6714686 13.0989277,12.281055 12.7371505,12.675721 L7.23715054,18.675721 C6.86395813,19.08284 6.23139076,19.1103429 5.82427177,18.7371505 C5.41715278,18.3639581 5.38964985,17.7313908 5.76284226,17.3242718 L10.6158586,12.0300721 L5.29288961,6.70710318 Z"
+            fill="#000000" fill-rule="nonzero"
+            transform="translate(8.999997, 11.999999) scale(-1, 1) translate(-8.999997, -11.999999) "/>
+        <path
+            d="M10.7071009,15.7071068 C10.3165766,16.0976311 9.68341162,16.0976311 9.29288733,15.7071068 C8.90236304,15.3165825 8.90236304,14.6834175 9.29288733,14.2928932 L15.2928873,8.29289322 C15.6714663,7.91431428 16.2810527,7.90106866 16.6757187,8.26284586 L22.6757187,13.7628459 C23.0828377,14.1360383 23.1103407,14.7686056 22.7371482,15.1757246 C22.3639558,15.5828436 21.7313885,15.6103465 21.3242695,15.2371541 L16.0300699,10.3841378 L10.7071009,15.7071068 Z"
+            fill="#000000" fill-rule="nonzero" opacity="0.3"
+            transform="translate(15.999997, 11.999999) scale(-1, 1) rotate(-270.000000) translate(-15.999997, -11.999999) "/>
+    </g>
+</svg><!--end::Svg Icon--></span></button>
+        <!--end::Toolbar-->
+    </div>
+    <!--end::Brand-->
+
+    <!--begin::Aside Menu-->
+    <div class="aside-menu-wrapper flex-column-fluid" id="kt_aside_menu_wrapper">
+
+        <!--begin::Menu Container-->
+        <div
+            id="kt_aside_menu"
+            class="aside-menu my-4 "
+            data-menu-vertical="1"
+            data-menu-scroll="1" data-menu-dropdown-timeout="500">
+            <!--begin::Menu Nav-->
+            <ul class="menu-nav ">
+                                <li class="menu-item " aria-haspopup="true">
+                    <a href="https://panel.drhanasabzadeh.ir/admin/dashboard" class="menu-link ">
+                        <span class="svg-icon menu-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <rect x="0" y="0" width="24" height="24"/>
+                                    <rect fill="#000000" x="4" y="4" width="7" height="7" rx="1.5"/>
+                                    <path
+                                        d="M5.5,13 L9.5,13 C10.3284271,13 11,13.6715729 11,14.5 L11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L5.5,20 C4.67157288,20 4,19.3284271 4,18.5 L4,14.5 C4,13.6715729 4.67157288,13 5.5,13 Z M14.5,4 L18.5,4 C19.3284271,4 20,4.67157288 20,5.5 L20,9.5 C20,10.3284271 19.3284271,11 18.5,11 L14.5,11 C13.6715729,11 13,10.3284271 13,9.5 L13,5.5 C13,4.67157288 13.6715729,4 14.5,4 Z M14.5,13 L18.5,13 C19.3284271,13 20,13.6715729 20,14.5 L20,18.5 C20,19.3284271 19.3284271,20 18.5,20 L14.5,20 C13.6715729,20 13,19.3284271 13,18.5 L13,14.5 C13,13.6715729 13.6715729,13 14.5,13 Z"
+                                        fill="#000000" opacity="0.3"/>
+                                </g>
+                            </svg>
+                        </span>
+
+                        <span class="menu-text">داشبورد</span>
+                    </a>
+                </li>
+                                 <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                        <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
+                           <i class="fa-solid fa-chalkboard-user"></i>
+                        </span><span class="menu-text">دوره ها</span><i class="menu-arrow"></i></a>
+                        <div class="menu-submenu "><i class="menu-arrow"></i>
+                            <ul class="menu-subnav">
+                                <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">دوره ها</span>
+                                </span>
+                                </li>
+                                                                    <li class="menu-item " aria-haspopup="true">
+                                        <a  class="menu-link ">
+
+                                            <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                                                            <span class="menu-text" onclick="window.open('https://panel.drhanasabzadeh.ir/admin/course/create','_self')">افزودن دوره</span>
+                                                                                             <span class="menu-label">
+                                        <span class="label label-primary label-inline" onclick="window.open('https://panel.drhanasabzadeh.ir/admin/course','_self')">
+                                           لیست
+                                        </span>
+                                    </span>
+                                                                                    </a>
+                                    </li>
+                                                                     <li class="menu-item " aria-haspopup="true">
+                                        <a class="menu-link ">
+                                            <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                                                            <span class="menu-text" onclick="window.open('https://panel.drhanasabzadeh.ir/admin/meet/create','_self')">افزودن جلسات</span>
+                                                                                             <span class="menu-label">
+                                        <span class="label label-primary label-inline" onclick="window.open('https://panel.drhanasabzadeh.ir/admin/meet','_self')">
+                                           لیست
+                                        </span>
+                                    </span>
+                                        </a>
+                                    </li>
+                                                                      <li class="menu-item " aria-haspopup="true">
+                                        <a class="menu-link ">
+                                            <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                                                            <span class="menu-text" onclick="window.open('https://panel.drhanasabzadeh.ir/admin/product/create','_self')">افزودن فایل به دوره</span>
+                                                                                             <span class="menu-label">
+                                        <span class="label label-primary label-inline" onclick="window.open('https://panel.drhanasabzadeh.ir/admin/products','_self')">
+                                           لیست
+                                        </span>
+                                    </span>
+                                                                                    </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </li>
+                                                         <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                            <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
+                          <i class="fa-solid fa-user"></i>
+                        </span><span class="menu-text">اعضا</span><i class="menu-arrow"></i></a>
+                            <div class="menu-submenu "><i class="menu-arrow"></i>
+                                <ul class="menu-subnav">
+                                    <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">اعضا</span>
+                                </span>
+                                    </li>
+                                                                            <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/userlist" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">مدیریت اعضا</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/comment" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">نظرات</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/uploaduser" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">افزودن عضو</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/support" class="menu-link">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">تیکت ها</span>
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </li>
+                                             <li class="menu-item  menu-item-submenu menu-item-open" aria-haspopup="true" data-menu-toggle="hover">
+                            <a href="https://panel.drhanasabzadeh.ir/admin/groupaction" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
+                           <i class="fa-solid fa-users-medical"></i>
+                        </span><span class="menu-text">عملیات گروهی</span><i class="menu-arrow"></i></a>
+                        </li>
+                                             <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                            <a href="javascript:;" class="menu-link menu-toggle">
+                        <span class="svg-icon menu-icon">
+                          <i class="fa-sharp fa-solid fa-bell"></i>
+                        </span>
+                                <span class="menu-text">کانال اطلاع رسانی</span><i class="menu-arrow"></i></a>
+                            <div class="menu-submenu "><i class="menu-arrow"></i>
+                                <ul class="menu-subnav">
+                                    <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">کانال اطلاع رسانی</span>
+                                </span>
+                                    </li>
+                                                                            <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/channel/create" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">کانال جدید</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/channels" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">لیست کانال ها</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/channelposts/create" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">مطلب جدید</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/channelposts" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">لیست مطالب</span>
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </li>
+
+                    
+
+                                            <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                            <a href="javascript:;" class="menu-link menu-toggle">
+                        <span class="svg-icon menu-icon">
+                          <i class="fa-duotone fa-gear"></i>
+                        </span>
+                                <span class="menu-text">تنظیمات</span><i class="menu-arrow"></i></a>
+                            <div class="menu-submenu "><i class="menu-arrow"></i>
+                                <ul class="menu-subnav">
+                                    <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">تنظیمات</span>
+                                </span>
+                                    </li>
+                                                                            <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/setting" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">تنظیمات عمومی</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/appearance/create" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">تنظیمات ظاهر اپلیکیشن</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/setting/subscriptions" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">اشتراک ها</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/setting/counseling" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">طرح های مشاوره</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/setting/edit_sliders" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">اسلایدر ها</span>
+                                            </a>
+                                        </li>
+                                     
+                                        <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/setting/crypto" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">تنظیمات پرداخت</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/setting/notices" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">اطلاع رسانی مدیر</span>
+                                            </a>
+                                        </li>
+                                                                         <li class="menu-item " aria-haspopup="true">
+                                        <a href="https://panel.drhanasabzadeh.ir/admin/setting/satisfaction" class="menu-link ">
+                                            <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                            <span class="menu-text">تیزر و رضایت دانشجوها</span>
+                                        </a>
+                                    </li>
+                                                                     </ul>
+                            </div>
+                        </li>
+                                             <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                            <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
+                         <i class="fa-solid fa-badge-percent"></i>
+                        </span><span class="menu-text">کد تخفیف</span><i class="menu-arrow"></i></a>
+                            <div class="menu-submenu "><i class="menu-arrow"></i>
+                                <ul class="menu-subnav">
+                                    <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">کد تخفیف</span>
+                                </span>
+                                    </li>
+                                                                            <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/discount/create" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">ایجاد کد تخفیف</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/discount" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">لیست کدهای تخفیف</span>
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </li>
+                                             <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                            <a href="javascript:;" class="menu-link menu-toggle">
+                        <span class="svg-icon menu-icon">
+                            <i class="fa-duotone fa-rectangle-vertical-history"></i>
+                        </span>
+                                <span class="menu-text">استوری ها</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="menu-submenu "><i class="menu-arrow"></i>
+                                <ul class="menu-subnav">
+                                    <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">استوری ها</span>
+                                </span>
+                                    </li>
+                                                                            <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/story/create" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">ساخت استوری</span>
+                                            </a>
+                                        </li>
+                                                                             <li class="menu-item " aria-haspopup="true">
+                                            <a href="https://panel.drhanasabzadeh.ir/admin/story" class="menu-link ">
+                                                <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                                <span class="menu-text">مدیریت استوری ها</span>
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </li>
+                     
+                                <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <rect x="0" y="0" width="24" height="24"/>
+                                    <path
+                                        d="M10,4 L21,4 C21.5522847,4 22,4.44771525 22,5 L22,7 C22,7.55228475 21.5522847,8 21,8 L10,8 C9.44771525,8 9,7.55228475 9,7 L9,5 C9,4.44771525 9.44771525,4 10,4 Z M10,10 L21,10 C21.5522847,10 22,10.4477153 22,11 L22,13 C22,13.5522847 21.5522847,14 21,14 L10,14 C9.44771525,14 9,13.5522847 9,13 L9,11 C9,10.4477153 9.44771525,10 10,10 Z M10,16 L21,16 C21.5522847,16 22,16.4477153 22,17 L22,19 C22,19.5522847 21.5522847,20 21,20 L10,20 C9.44771525,20 9,19.5522847 9,19 L9,17 C9,16.4477153 9.44771525,16 10,16 Z"
+                                        fill="#000000"/>
+                                    <rect fill="#000000" opacity="0.3" x="2" y="4" width="5" height="16" rx="1"/>
+                                </g>
+                        </svg>
+                        </span><span class="menu-text">گزارشات</span><i class="menu-arrow"></i></a>
+                    <div class="menu-submenu "><i class="menu-arrow"></i>
+                        <ul class="menu-subnav">
+                            <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">گزارشات</span>
+                                </span>
+                            </li>
+                                                             <li class="menu-item " aria-haspopup="true">
+                                    <a href="https://panel.drhanasabzadeh.ir/admin/order" class="menu-link ">
+                                        <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                        <span class="menu-text">گزارش خرید</span>
+                                    </a>
+                                </li>
+                                                             <li class="menu-item " aria-haspopup="true">
+                                    <a href="https://panel.drhanasabzadeh.ir/admin/order/cardtocard" class="menu-link ">
+                                        <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                        <span class="menu-text">گزارش کارت به کارت</span>
+                                    </a>
+                                </li>
+                                                             <li class="menu-item " aria-haspopup="true">
+                                    <a href="https://panel.drhanasabzadeh.ir/admin/order/pay" class="menu-link ">
+                                        <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                        <span class="menu-text">گزارش ورود به درگاه</span>
+                                    </a>
+                                </li>
+                            
+                              
+                        </ul>
+                    </div>
+                </li>
+                                                <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <rect x="0" y="0" width="24" height="24"/>
+                                    <path
+                                        d="M10,4 L21,4 C21.5522847,4 22,4.44771525 22,5 L22,7 C22,7.55228475 21.5522847,8 21,8 L10,8 C9.44771525,8 9,7.55228475 9,7 L9,5 C9,4.44771525 9.44771525,4 10,4 Z M10,10 L21,10 C21.5522847,10 22,10.4477153 22,11 L22,13 C22,13.5522847 21.5522847,14 21,14 L10,14 C9.44771525,14 9,13.5522847 9,13 L9,11 C9,10.4477153 9.44771525,10 10,10 Z M10,16 L21,16 C21.5522847,16 22,16.4477153 22,17 L22,19 C22,19.5522847 21.5522847,20 21,20 L10,20 C9.44771525,20 9,19.5522847 9,19 L9,17 C9,16.4477153 9.44771525,16 10,16 Z"
+                                        fill="#000000"/>
+                                    <rect fill="#000000" opacity="0.3" x="2" y="4" width="5" height="16" rx="1"/>
+                                </g>
+                        </svg>
+                        </span><span class="menu-text">گزارش مشاهده دوره</span><i class="menu-arrow"></i></a>
+                    <div class="menu-submenu "><i class="menu-arrow"></i>
+                        <ul class="menu-subnav">
+                            <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">گزارش مشاهده دوره</span>
+                                </span>
+                            </li>
+                                                             <li class="menu-item " aria-haspopup="true">
+                                    <a href="https://panel.drhanasabzadeh.ir/admin/courseview/course_viewing" class="menu-link ">
+                                        <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                        <span class="menu-text">ماتریکس فعالیت کاربران</span>
+                                    </a>
+                                </li>
+                                                             <li class="menu-item " aria-haspopup="true">
+                                    <a href="https://panel.drhanasabzadeh.ir/admin/courseview/chart" class="menu-link ">
+                                        <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                        <span class="menu-text">نمودار پیشرفت</span>
+                                    </a>
+                                </li>
+                                                             <li class="menu-item " aria-haspopup="true">
+                                    <a href="https://panel.drhanasabzadeh.ir/admin/courseview/abandoned_courses" class="menu-link ">
+                                        <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                        <span class="menu-text">ترک دوره</span>
+                                    </a>
+                                </li>
+                           
+                            
+                        </ul>
+                    </div>
+                </li>
+
+
+                                 <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="javascript:;" class="menu-link menu-toggle">
+                        <span class="svg-icon menu-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <polygon points="0 0 24 0 24 24 0 24"/>
+                                    <path
+                                        d="M12.9336061,16.072447 L19.36,10.9564761 L19.5181585,10.8312381 C20.1676248,10.3169571 20.2772143,9.3735535 19.7629333,8.72408713 C19.6917232,8.63415859 19.6104327,8.55269514 19.5206557,8.48129411 L12.9336854,3.24257445 C12.3871201,2.80788259 11.6128799,2.80788259 11.0663146,3.24257445 L4.47482784,8.48488609 C3.82645598,9.00054628 3.71887192,9.94418071 4.23453211,10.5925526 C4.30500305,10.6811601 4.38527899,10.7615046 4.47382636,10.8320511 L4.63,10.9564761 L11.0659024,16.0730648 C11.6126744,16.5077525 12.3871218,16.5074963 12.9336061,16.072447 Z"
+                                        fill="#000000" fill-rule="nonzero"/>
+                                    <path
+                                        d="M11.0563554,18.6706981 L5.33593024,14.122919 C4.94553994,13.8125559 4.37746707,13.8774308 4.06710397,14.2678211 C4.06471678,14.2708238 4.06234874,14.2738418 4.06,14.2768747 L4.06,14.2768747 C3.75257288,14.6738539 3.82516916,15.244888 4.22214834,15.5523151 C4.22358765,15.5534297 4.2250303,15.55454 4.22647627,15.555646 L11.0872776,20.8031356 C11.6250734,21.2144692 12.371757,21.2145375 12.909628,20.8033023 L19.7677785,15.559828 C20.1693192,15.2528257 20.2459576,14.6784381 19.9389553,14.2768974 C19.9376429,14.2751809 19.9363245,14.2734691 19.935,14.2717619 L19.935,14.2717619 C19.6266937,13.8743807 19.0546209,13.8021712 18.6572397,14.1104775 C18.654352,14.112718 18.6514778,14.1149757 18.6486172,14.1172508 L12.9235044,18.6705218 C12.377022,19.1051477 11.6029199,19.1052208 11.0563554,18.6706981 Z"
+                                        fill="#000000" opacity="0.3"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="menu-text">دسته بندی دوره ها</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="menu-submenu "><i class="menu-arrow"></i>
+                        <ul class="menu-subnav">
+                            <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">دسته بندی ها</span>
+                                </span>
+                            </li>
+                                                        <li class="menu-item " aria-haspopup="true">
+                                <a href="https://panel.drhanasabzadeh.ir/admin/cat/create" class="menu-link ">
+                                    <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                    <span class="menu-text">ایجاد دسته جدید</span>
+                                </a>
+                            </li>
+                                                         <li class="menu-item " aria-haspopup="true">
+                                <a href="https://panel.drhanasabzadeh.ir/admin/cat" class="menu-link ">
+                                    <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                    <span class="menu-text">مدیریت دسته ها</span>
+                                </a>
+                            </li>
+                                                    </ul>
+                    </div>
+                </li>
+                                   <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="javascript:;" class="menu-link menu-toggle">
+                        <span class="svg-icon menu-icon">
+                            <i class="fa-solid fa-signal-stream"></i>
+                        </span>
+                        <span class="menu-text">پخش زنده</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="menu-submenu "><i class="menu-arrow"></i>
+                        <ul class="menu-subnav">
+                            <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">پخش زنده</span>
+                                </span>
+                            </li>
+                                                        <li class="menu-item " aria-haspopup="true">
+                                <a href="https://panel.drhanasabzadeh.ir/admin/live/create" class="menu-link ">
+                                    <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                    <span class="menu-text">ایجاد پخش زنده</span>
+                                </a>
+                            </li>
+                                                         <li class="menu-item " aria-haspopup="true">
+                                <a href="https://panel.drhanasabzadeh.ir/admin/live" class="menu-link ">
+                                    <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                    <span class="menu-text">مدیریت پخش زنده ها</span>
+                                </a>
+                            </li>
+                                                         <li class="menu-item " aria-haspopup="true">
+                                <a href="https://panel.drhanasabzadeh.ir/admin/live/comments" class="menu-link ">
+                                    <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                    <span class="menu-text">نظرات پخش زنده ها</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+
+                                     <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                        <a href="javascript:;" class="menu-link menu-toggle">
+                        <span class="svg-icon menu-icon">
+                          <i class="fa-regular fa-circle-check"></i>
+                        </span>
+                            <span class="menu-text">آزمون/نظرسنجی</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="menu-submenu "><i class="menu-arrow"></i>
+                            <ul class="menu-subnav">
+                                <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">آزمون/نظرسنجی</span>
+                                </span>
+                                </li>
+                                                                    <li class="menu-item " aria-haspopup="true">
+                                        <a href="https://panel.drhanasabzadeh.ir/admin/exam/create" class="menu-link ">
+                                            <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                            <span class="menu-text">ایجاد آزمون</span>
+                                        </a>
+                                    </li>
+                                                                     <li class="menu-item " aria-haspopup="true">
+                                        <a href="https://panel.drhanasabzadeh.ir/admin/exam" class="menu-link ">
+                                            <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                            <span class="menu-text">مدیریت آزمون ها</span>
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                                   <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
+                           <i class="fa-solid fa-user-tie"></i>
+                        </span>
+                        <span class="menu-text">
+                                                            مدیران سامانه
+                                                    </span><i class="menu-arrow"></i></a>
+                    <div class="menu-submenu "><i class="menu-arrow"></i>
+                        <ul class="menu-subnav">
+                            <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">مدیران</span>
+                                </span>
+                            </li>
+                                                        <li class="menu-item " aria-haspopup="true">
+                                <a href="https://panel.drhanasabzadeh.ir/admin/teacher/create" class="menu-link ">
+                                    <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                    <span class="menu-text">مدیر جدید</span>
+                                </a>
+                            </li>
+                                                         <li class="menu-item " aria-haspopup="true">
+                                <a href="https://panel.drhanasabzadeh.ir/admin/teachers" class="menu-link ">
+                                    <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                    <span class="menu-text">مدیریت مدیران</span>
+                                </a>
+                            </li>
+                                                                                </ul>
+                    </div>
+                </li>
+                                 <li class="menu-item  menu-item-submenu " aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="javascript:;" class="menu-link menu-toggle">
+                        <span class="svg-icon menu-icon">
+                          <i class="fa-solid fa-messages"></i>
+                        </span>
+                        <span class="menu-text">پیام ها</span><i class="menu-arrow"></i></a>
+                        <div class="menu-submenu "><i class="menu-arrow"></i>
+                        <ul class="menu-subnav">
+                            <li class="menu-item  menu-item-parent" aria-haspopup="true">
+                                <span class="menu-link">
+                                    <span class="menu-text">پیام ها</span>
+                                </span>
+                            </li>
+                                                        <li class="menu-item " aria-haspopup="true">
+                                <a href="https://panel.drhanasabzadeh.ir/admin/msg/create" class="menu-link ">
+                                    <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                    <span class="menu-text">ارسال پیام</span>
+                                </a>
+                            </li>
+                                                         <li class="menu-item " aria-haspopup="true">
+                                <a href="https://panel.drhanasabzadeh.ir/admin/msg" class="menu-link ">
+                                    <i class="menu-bullet menu-bullet-dot"><span></span></i>
+                                    <span class="menu-text">پیام های ارسال شده</span>
+                                </a>
+                            </li>
+                                                    </ul>
+                    </div>
+                </li>
+                               <li class="menu-item  menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="https://panel.drhanasabzadeh.ir/admin/logout" class="menu-link menu-toggle">
+                        <span class="svg-icon menu-icon">
+                           <i class="fa-solid fa-right-from-bracket"></i>
+                        </span>
+                        <span class="menu-text">خروج</span><i class="menu-arrow"></i>
+                    </a>
+                </li>
+
+
+            </ul>
+            <!--end::Menu Nav-->
+        </div>
+        <!--end::Menu Container-->
+    </div>
+    <!--end::Aside Menu-->
+</div>
+<!--end::Aside-->
+
+        <!--begin::Wrapper-->
+        <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+            <!--begin::Header-->
+            <div id="kt_header" class="header  header-fixed " >
+                <!--begin::Container-->
+                <div class=" container-fluid  d-flex align-items-stretch justify-content-between">
+                    <!--begin::Header Menu Wrapper-->
+                    <div class="header-menu-wrapper header-menu-wrapper-left" id="kt_header_menu_wrapper">
+                        <!--begin::Header Menu-->
+                                                <div id="kt_header_menu" class="header-menu header-menu-mobile  header-menu-layout-default " >
+                            <ul class="menu-nav ">
+                                <li class="menu-item  menu-item-submenu menu-item-rel menu-item-active"  data-menu-toggle="click" aria-haspopup="true"><a  href="https://drhanasabzadeh.ir" target="_blank" class="menu-link"><span class="menu-text">نسخه pwa</span><i class="menu-arrow"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end::Header Menu Wrapper-->
+
+                    <!--begin::Topbar-->
+                    <div class="topbar">
+                        <!--begin::User-->
+                        <div class="topbar-item">
+                            <div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
+                                 <span style="margin-left: 5px" class="symbol symbol-lg-35 symbol-25 symbol-light-success">
+		                        <span class="symbol-label font-size-h5 font-weight-bold">01</span>
+		                        </span>
+                                <span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">آذر</span>
+
+                            </div>
+                        </div>
+                        <!--end::User-->
+                    </div>
+                    <!--end::Topbar-->
+                </div>
+                <!--end::Container-->
+            </div>
+            <!--end::Header-->
+            <!--begin::Content-->
+            <div class="content  d-flex flex-column flex-column-fluid" id="kt_content" style="padding: unset">
+                <!--begin::Entry-->
+                <div class="d-flex flex-column-fluid">
+                    <!--begin::Container-->
+                    <div class=" container ">
+                        <!--begin::داشبورد-->
+                        <!--begin::Row-->
+                        <div class="row">
+                        
+    <script language="JavaScript">
+        function toggle(source) {
+            checkboxes = document.getElementsByClassName('myselect');
+            for(var i=0, n=checkboxes.length;i<n;i++) {
+                checkboxes[i].checked = source.checked;
+            }
+        }
+    </script>
+
+    <script>
+
+        function getType(element) {
+            if(element.value==1){
+                $('.credit').show();
+                $('.point').hide();
+                $('.addcourse').hide();
+                $('.addlive').hide();
+                $('.addmeet').hide();
+            }
+            else if(element.value==2){
+                $('.point').show();
+                $('.credit').hide();
+                $('.addcourse').hide();
+                $('.addlive').hide();
+                $('.addmeet').hide();
+            }
+            else if(element.value==3){
+                $('.addcourse').show();
+                $('.point').hide();
+                $('.credit').hide();
+                $('.addlive').hide();
+                $('.addmeet').hide();
+            }
+            else if(element.value==4){
+                $('.addcourse').hide();
+                $('.point').hide();
+                $('.credit').hide();
+                $('.addmeet').hide();
+                $('.addlive').show();
+            }
+            else if(element.value==5){
+                $('.addmeet').show();
+                $('.addcourse').hide();
+                $('.point').hide();
+                $('.credit').hide();
+                $('.addlive').hide();
+            }
+            else{
+                $('.credit').hide();
+                $('.point').hide();
+                $('.addcourse').hide();
+                $('.addlive').hide();
+                $('.addmeet').hide();
+            }
+        }
+        function getMeet(val) {
+            $.ajax({
+                type:'POST',
+                url:'/getmeet',
+                data:'_token=w17vHT9LUTnkIJQ1hVhBgFKrWTjlWS1Lu0wTxsBp&courseref='+val.value,
+                success:function(data) {
+                    // $("#msg").html(data.msg);
+                    $(".meetref").html(data);
+                }
+            });
+        }
+    </script>
+
+    <div class="card card-custom" style="width: 98%;">
+        <div class="card-header flex-wrap border-0 pt-6 pb-0">
+            <div class="card-title">
+                <h3 class="card-label">
+                    عملیات گروهی
+                    <span class="d-block text-muted pt-2 font-size-sm"> عملیات بر روی اعضا ثبت نام شده در سامانه</span>
+                </h3>
+            </div>
+
+        </div>
+        <div class="card-body">
+            <div class="mb-7">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-xl-12">
+                        <form action="/admin/groupaction" method="GET">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 my-2 my-md-0">
+                                    <div class="form-group row">
+                                        <label class="col-3">ثبت نام از</label>
+                                        <div class="col-9">
+                                            <input id="date2" value="" name="begindate" class="form-control form-control-solid" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 my-2 my-md-0">
+                                    <div class="form-group row">
+                                        <label class="col-3">تا تاریخ</label>
+                                        <div class="col-9">
+                                            <input id="date1" value="" name="enddate" class="form-control form-control-solid" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 my-2 my-md-0">
+                                    <div class="form-group row">
+                                        <label class="col-3">شماره موبایل</label>
+                                        <div class="col-9">
+                                            <input class="form-control" name="mobile" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 my-2 my-md-0">
+                                    <div class="form-group row">
+                                        <label class="col-3">قسمتی از نام</label>
+                                        <div class="col-9">
+                                            <input class="form-control" name="name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 my-2 my-md-0">
+                                    <div class="form-group row">
+                                        <label class="col-3">&nbsp;</label>
+                                        <div class="col-9">
+                                            <button style="width: 100%" type="submit" class="btn btn-primary mr-2">فیلتر اعضا</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+                <div class="card-body">
+            <!--begin: جستجو Form-->
+            <!--begin::جستجو Form-->
+
+            <div class="col-12">
+
+            <span class="menu-label">
+                <label for="checkall" class="label label-primary label-inline" style="padding:16px;margin-bottom: 20px" >
+                  انتخاب همه &nbsp;<input type="checkbox" id="checkall" onClick="toggle(this)" style="width: 18px;width: 18px" />
+                </label>
+            </span>
+            </div>
+            <!--end::جستجو Form-->
+            <!--end: جستجو Form-->
+                            <div class="alert alert-secondary" role="alert">
+                    نمایش 50 کاربر آخر ، جهت مشاهده کاربرهای بیشتر از فیلترهای بالا (فیلتر تاریخ ثبت نام) استفاده کنید
+                </div>
+                        <form class="myvalid" novalidate action="https://panel.drhanasabzadeh.ir/admin/groupaction" method="post">
+                <input type="hidden" name="_token" value="w17vHT9LUTnkIJQ1hVhBgFKrWTjlWS1Lu0wTxsBp">                <div class="table-container">
+                    <table  style="width:90%">
+
+                        <tr>
+                            <td>ردیف</td>
+                            <td>انتخاب</td>
+                            <td>شماره همراه</td>
+                            <td>نام</td>
+
+                        </tr>
+
+                                                                                                        <tr>
+                                <td><label for="user[351031]">1</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[351031]" name="user[351031]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[351031]">09213201826</label></td>
+                                <td><label for="user[351031]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350990]">2</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350990]" name="user[350990]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350990]">09354041794</label></td>
+                                <td><label for="user[350990]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350880]">3</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350880]" name="user[350880]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350880]">hamid47daneshvar@gmail.com</label></td>
+                                <td><label for="user[350880]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350867]">4</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350867]" name="user[350867]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350867]">09163063552</label></td>
+                                <td><label for="user[350867]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350851]">5</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350851]" name="user[350851]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350851]">09380716123</label></td>
+                                <td><label for="user[350851]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350849]">6</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350849]" name="user[350849]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350849]">09177665493</label></td>
+                                <td><label for="user[350849]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350836]">7</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350836]" name="user[350836]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350836]">09203729116</label></td>
+                                <td><label for="user[350836]">ناصح فیضی</label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350827]">8</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350827]" name="user[350827]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350827]">09171050096</label></td>
+                                <td><label for="user[350827]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350825]">9</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350825]" name="user[350825]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350825]">09339191786</label></td>
+                                <td><label for="user[350825]">زهره اکبریان</label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350810]">10</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350810]" name="user[350810]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350810]">shalbaf1943@gmail.com</label></td>
+                                <td><label for="user[350810]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350782]">11</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350782]" name="user[350782]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350782]">09196775442</label></td>
+                                <td><label for="user[350782]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350779]">12</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350779]" name="user[350779]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350779]">09929905135</label></td>
+                                <td><label for="user[350779]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350751]">13</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350751]" name="user[350751]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350751]">09309574590</label></td>
+                                <td><label for="user[350751]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350750]">14</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350750]" name="user[350750]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350750]">09111708753</label></td>
+                                <td><label for="user[350750]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350749]">15</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350749]" name="user[350749]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350749]">09141539871</label></td>
+                                <td><label for="user[350749]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350739]">16</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350739]" name="user[350739]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350739]">09305790453</label></td>
+                                <td><label for="user[350739]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350736]">17</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350736]" name="user[350736]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350736]">09189713851</label></td>
+                                <td><label for="user[350736]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350735]">18</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350735]" name="user[350735]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350735]">09163311368</label></td>
+                                <td><label for="user[350735]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350733]">19</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350733]" name="user[350733]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350733]">09120474312</label></td>
+                                <td><label for="user[350733]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350726]">20</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350726]" name="user[350726]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350726]">09192343680</label></td>
+                                <td><label for="user[350726]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350704]">21</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350704]" name="user[350704]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350704]">09153825669</label></td>
+                                <td><label for="user[350704]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350691]">22</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350691]" name="user[350691]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350691]">09120720569</label></td>
+                                <td><label for="user[350691]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350684]">23</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350684]" name="user[350684]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350684]">09153719403</label></td>
+                                <td><label for="user[350684]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350676]">24</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350676]" name="user[350676]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350676]">09352469796</label></td>
+                                <td><label for="user[350676]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350675]">25</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350675]" name="user[350675]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350675]">09044027645</label></td>
+                                <td><label for="user[350675]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350642]">26</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350642]" name="user[350642]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350642]">09111562730</label></td>
+                                <td><label for="user[350642]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350625]">27</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350625]" name="user[350625]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350625]">09174023329</label></td>
+                                <td><label for="user[350625]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350621]">28</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350621]" name="user[350621]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350621]">09379441254</label></td>
+                                <td><label for="user[350621]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350609]">29</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350609]" name="user[350609]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350609]">09183905644</label></td>
+                                <td><label for="user[350609]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350606]">30</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350606]" name="user[350606]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350606]">09129631965</label></td>
+                                <td><label for="user[350606]">سارا مهربان نسب</label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350604]">31</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350604]" name="user[350604]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350604]">09180898560</label></td>
+                                <td><label for="user[350604]">مریم صالحی</label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350597]">32</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350597]" name="user[350597]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350597]">09121778654</label></td>
+                                <td><label for="user[350597]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350594]">33</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350594]" name="user[350594]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350594]">09118207090</label></td>
+                                <td><label for="user[350594]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350583]">34</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350583]" name="user[350583]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350583]">09123260965</label></td>
+                                <td><label for="user[350583]">سوسن خردمند</label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350580]">35</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350580]" name="user[350580]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350580]">09179324403</label></td>
+                                <td><label for="user[350580]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350569]">36</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350569]" name="user[350569]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350569]">09158849120</label></td>
+                                <td><label for="user[350569]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350529]">37</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350529]" name="user[350529]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350529]">09148733653</label></td>
+                                <td><label for="user[350529]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350517]">38</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350517]" name="user[350517]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350517]">09118195892</label></td>
+                                <td><label for="user[350517]">رقیه دست گه</label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350505]">39</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350505]" name="user[350505]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350505]">09193865394</label></td>
+                                <td><label for="user[350505]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350504]">40</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350504]" name="user[350504]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350504]">09035329554</label></td>
+                                <td><label for="user[350504]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350481]">41</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350481]" name="user[350481]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350481]">09359135120</label></td>
+                                <td><label for="user[350481]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350456]">42</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350456]" name="user[350456]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350456]">09398203148</label></td>
+                                <td><label for="user[350456]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350423]">43</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350423]" name="user[350423]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350423]">09106558365</label></td>
+                                <td><label for="user[350423]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350420]">44</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350420]" name="user[350420]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350420]">09158000975</label></td>
+                                <td><label for="user[350420]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350393]">45</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350393]" name="user[350393]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350393]">09130335698</label></td>
+                                <td><label for="user[350393]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350376]">46</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350376]" name="user[350376]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350376]">09352362187</label></td>
+                                <td><label for="user[350376]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350375]">47</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350375]" name="user[350375]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350375]">09195603788</label></td>
+                                <td><label for="user[350375]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350350]">48</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350350]" name="user[350350]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350350]">homa.parsa22@yahoo.com</label></td>
+                                <td><label for="user[350350]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350345]">49</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350345]" name="user[350345]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350345]">09918232031</label></td>
+                                <td><label for="user[350345]"></label></td>
+                            </tr>
+                                                                                <tr>
+                                <td><label for="user[350342]">50</label></td>
+                                <td>
+                                    <input type="checkbox" id="user[350342]" name="user[350342]" class="myselect" value="1">
+                                </td>
+                                <td><label for="user[350342]">09127232994</label></td>
+                                <td><label for="user[350342]"></label></td>
+                            </tr>
+                        
+                    </table>
+                </div>
+
+                <div class="card-body">
+
+                    <div class="form-group" style="margin: 50px 0 50px 0">
+                        <label>انتخاب عملیات:</label>
+                        <select required name="type" id="type" onchange="getType(this)" class="form-control form-control-solid">
+                            <option value="">انتخاب کنید...</option>
+                            <option value="1">افزایش یا کاهش اعتبار کیف پول</option>
+                            <option value="2">افزایش یا کاهش امتیاز</option>
+                            <option value="3">افزودن دوره های اختصاصی به کاربران</option>
+                            <option value="5">افزودن جلسات دوره ها به کاربران</option>
+                            <option value="4">افزودن لایو به کاربران</option>
+                        </select>
+                    </div>
+                    <div class="form-group credit" style="display: none;margin: 0 0 50px 0">
+                        <label>مبلغ را به تومان وارد کنید:</label>
+                        <input type="number" name="price" class="form-control form-control-solid">
+                    </div>
+                    <div class="form-group point" style="display: none;">
+                        <label>تعداد امتیاز را وارد کنید:</label>
+                        <input type="number" name="point" class="form-control form-control-solid">
+                    </div>
+                    <div class="addcourse row" style="display: none">
+                        <label style="margin-right: 1%">دوره های مورد نظر را انتخاب کنید</label>
+                        <select  name="courses[]" style="width: 90% !important;margin: 0 1% 5% 0 !important" class="form-control-solid select2 col-12" id="kt_select2_3" multiple="multiple">
+                                                            <option value="1184">ققنوس(مشاوره جامع و تخصصی خیانت)</option>
+                                                            <option value="1189">👑دوره زنانگی فاخر👸🏼</option>
+                                                            <option value="1251">شفای جنسی</option>
+                                                            <option value="1259">دوره هدیه شفای زندگی جنسی (سه جلسه اول)</option>
+                                                            <option value="1260">5 تکنیک زوجدرمانی نجات دهنده زندگی زناشویی</option>
+                                                            <option value="1261">شاه کلید وفاداری به رابطه - تکنیک سه مرحله‌ای معادله عشق</option>
+                                                            <option value="1262">طلاق عاطفی چیست؟ - داستان نسترن و علی</option>
+                                                            <option value="1263">پیشنمایش دوره - افسون‌های زنانه</option>
+                                                            <option value="1264">با هم ماندن</option>
+                                                            <option value="1265">چکاب سلامتی رابطه</option>
+                                                            <option value="1266">شفای زخم عاطفی</option>
+                                                            <option value="1267">سه راه شناخت دیگران و رفتارهاشون!</option>
+                                                            <option value="1268">⁉️چطور با همسرم رفاقت کنم؟</option>
+                                                            <option value="1269">احترام به غار تنهایی مرد</option>
+                                                            <option value="1270">جذب عشق با انرژی مثبت کلام</option>
+                                                            <option value="1271">چطور ساکت‌ترین مردها را به حرف بیاریم؟</option>
+                                                            <option value="1272">بازگشت به دوران شیرین نامزدی</option>
+                                                            <option value="1273">👇فرقی نداره مجردی یا متاهل این راز مثبت ۱۸ 🔞 را درباره آقایون باید بدونی!</option>
+                                                            <option value="1274">جلسات اول و دوم از دوره حال نو</option>
+                                                            <option value="1276">افسون های زنانه</option>
+                                                            <option value="1278">شادکامی</option>
+                                                            <option value="1279">حال نو</option>
+                                                            <option value="1284">جادوی کلام عشق</option>
+                                                            <option value="1285">جذب عشق با انرژی مثبت کلام (جلسه رایگان از دوره جادوی کلام عشق)</option>
+                                                            <option value="1501">من ارزشمند</option>
+                                                            <option value="1502">همایش بزرگ آروما</option>
+                                                            <option value="1503">به هم رسیدن</option>
+                                                            <option value="1506">من قدرتمند</option>
+                                                            <option value="1522">من هدفمند</option>
+                                                            <option value="1523">مسیر عشق ایده آل</option>
+                                                            <option value="1525">نقشه مسیر سکس ایده‌آل</option>
+                                                            <option value="1526">جعبه ابزار موفقیت</option>
+                                                            <option value="1527">✴️معجزه احترام متقابل</option>
+                                                            <option value="1528">زن قهرمان</option>
+                                                            <option value="1529">استعدادیابی و شکوفایی</option>
+                                                            <option value="1531">خرید یکجا شفای جنسی، زنانگی فاخر و ققنوس</option>
+                                                            <option value="1538">تقویت شادابی درونی با زنانگی فاخر</option>
+                                                            <option value="1551">کاریزمای زنانه</option>
+                                                            <option value="1559">مینی دوره دارک گیمز (بازی های سیاه)</option>
+                                                            <option value="1561">دارک گیمز (شناخت و خنثی سازی بازی‌های روانی در روابط عاطفی)</option>
+                                                            <option value="1688">دوره حضوری آروماتیک</option>
+                                                            <option value="1787">کارگاه رزق آفرین</option>
+                                                    </select>
+                    </div>
+                    <div class="addlive row" style="display: none">
+                        <label style="margin-right: 1%">لایو های مورد نظر را انتخاب کنید</label>
+                        <select  name="lives[]" style="width: 90% !important;margin: 0 1% 5% 0 !important" class="form-control-solid select2 col-12" id="kt_select2_1" multiple="multiple">
+                                                    </select>
+                    </div>
+                    <div class="addmeet row" style="display: none">
+                        <label style="margin-right: 1%">دوره ی مورد نظر را انتخاب کنید</label>
+                        <select onchange="getMeet(this)" name="courseref" style="width: 90% !important;margin: 0 1% 5% 0 !important" class="form-control-solid col-12">
+                            <option value="0">انتخاب دوره</option>
+                                                            <option value="1184">ققنوس(مشاوره جامع و تخصصی خیانت)</option>
+                                                            <option value="1189">👑دوره زنانگی فاخر👸🏼</option>
+                                                            <option value="1251">شفای جنسی</option>
+                                                            <option value="1259">دوره هدیه شفای زندگی جنسی (سه جلسه اول)</option>
+                                                            <option value="1260">5 تکنیک زوجدرمانی نجات دهنده زندگی زناشویی</option>
+                                                            <option value="1261">شاه کلید وفاداری به رابطه - تکنیک سه مرحله‌ای معادله عشق</option>
+                                                            <option value="1262">طلاق عاطفی چیست؟ - داستان نسترن و علی</option>
+                                                            <option value="1263">پیشنمایش دوره - افسون‌های زنانه</option>
+                                                            <option value="1264">با هم ماندن</option>
+                                                            <option value="1265">چکاب سلامتی رابطه</option>
+                                                            <option value="1266">شفای زخم عاطفی</option>
+                                                            <option value="1267">سه راه شناخت دیگران و رفتارهاشون!</option>
+                                                            <option value="1268">⁉️چطور با همسرم رفاقت کنم؟</option>
+                                                            <option value="1269">احترام به غار تنهایی مرد</option>
+                                                            <option value="1270">جذب عشق با انرژی مثبت کلام</option>
+                                                            <option value="1271">چطور ساکت‌ترین مردها را به حرف بیاریم؟</option>
+                                                            <option value="1272">بازگشت به دوران شیرین نامزدی</option>
+                                                            <option value="1273">👇فرقی نداره مجردی یا متاهل این راز مثبت ۱۸ 🔞 را درباره آقایون باید بدونی!</option>
+                                                            <option value="1274">جلسات اول و دوم از دوره حال نو</option>
+                                                            <option value="1276">افسون های زنانه</option>
+                                                            <option value="1278">شادکامی</option>
+                                                            <option value="1279">حال نو</option>
+                                                            <option value="1284">جادوی کلام عشق</option>
+                                                            <option value="1285">جذب عشق با انرژی مثبت کلام (جلسه رایگان از دوره جادوی کلام عشق)</option>
+                                                            <option value="1501">من ارزشمند</option>
+                                                            <option value="1502">همایش بزرگ آروما</option>
+                                                            <option value="1503">به هم رسیدن</option>
+                                                            <option value="1506">من قدرتمند</option>
+                                                            <option value="1522">من هدفمند</option>
+                                                            <option value="1523">مسیر عشق ایده آل</option>
+                                                            <option value="1525">نقشه مسیر سکس ایده‌آل</option>
+                                                            <option value="1526">جعبه ابزار موفقیت</option>
+                                                            <option value="1527">✴️معجزه احترام متقابل</option>
+                                                            <option value="1528">زن قهرمان</option>
+                                                            <option value="1529">استعدادیابی و شکوفایی</option>
+                                                            <option value="1531">خرید یکجا شفای جنسی، زنانگی فاخر و ققنوس</option>
+                                                            <option value="1538">تقویت شادابی درونی با زنانگی فاخر</option>
+                                                            <option value="1551">کاریزمای زنانه</option>
+                                                            <option value="1559">مینی دوره دارک گیمز (بازی های سیاه)</option>
+                                                            <option value="1561">دارک گیمز (شناخت و خنثی سازی بازی‌های روانی در روابط عاطفی)</option>
+                                                            <option value="1688">دوره حضوری آروماتیک</option>
+                                                            <option value="1787">کارگاه رزق آفرین</option>
+                                                    </select>
+
+                        <label style="margin-right: 1%">جلسات مورد نظر را انتخاب کنید</label>
+                        <select  name="meets[]"  style="width: 90% !important;margin: 0 1% 5% 0 !important" class="form-control-solid select2 col-12 meetref" id="kt_select2_2" multiple="multiple">
+                            <option value="0">همه ی جلسه های این دوره</option>
+                        </select>
+                    </div>
+
+
+                    <div style="margin-top: 70px">
+                        <button name="doaction" value="1" type="submit" onclick="return(confirm('از انجام این عملیات اطمینان دارید؟'));" class="btn btn-primary mr-2">انجام عملیات گروهی</button>
+                    </div>
+                    <br/>
+                    <hr/>
+                    <br/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--begin::Card-->
+    <style>
+        /* استایل برای کانتینر جدول */
+        .table-container {
+            max-height: 500px; /* حداکثر ارتفاع برای جدول */
+            overflow-y: auto; /* فعال کردن اسکرول عمودی */
+            border: 1px solid #ccc; /* افزودن حاشیه به کانتینر */
+            padding: 10px; /* اضافه کردن فاصله داخلی */
+        }
+
+        /* استایل پایه برای جدول */
+        table {
+            width: 100%; /* جدول به طور کامل فضای کانتینر را پر کند */
+            border-collapse: collapse; /* ادغام حاشیه‌های سلول‌ها */
+        }
+
+        /* استایل برای سطرها */
+        tr {
+            transition: background-color 0.3s, color 0.3s; /* افکت نرم هنگام هاور */
+        }
+
+        /* تغییر رنگ پس‌زمینه هنگام هاور */
+        tr:hover {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        /* استفاده از استایل راه‌راه */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        /* استایل برای سلول‌های جدول */
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* استایل برای عنوان‌های جدول */
+        th {
+            padding: 10px;
+            text-align: left;
+            background-color: #f7f7f7;
+            border-bottom: 2px solid #ccc;
+        }
+
+        /* استایل برای چک‌باکس‌ها */
+        input[type="checkbox"] {
+            transform: scale(1.2);
+            margin: 0;
+        }
+        label{
+            cursor: pointer;
+        }
+    </style>
+                        </div>
+                        <!--end::Row-->
+                    </div>
+                    <!--end::Container-->
+                </div>
+                <!--end::Entry-->
+            </div>
+            <!--end::Content-->
+
+            <!--begin::Footer-->
+            <div class="footer bg-white py-4 d-flex flex-lg-column " id="kt_footer">
+                <!--begin::Container-->
+                <div class=" container-fluid  d-flex flex-column flex-md-row align-items-center justify-content-between">
+                    <!--begin::کپی رایت-->
+
+
+
+
+                    <!--end::کپی رایت-->
+
+                    <!--begin::Nav-->
+                    <div class="nav nav-dark">
+                        <a href="https://drhanasabzadeh.ir" target="_blank" class="nav-link pl-0 pr-5">https://drhanasabzadeh.ir</a>
+
+                    </div>
+                    <!--end::Nav-->
+                </div>
+                <!--end::Container-->
+            </div>
+            <!--end::Footer-->
+        </div>
+        <!--end::Wrapper-->
+    </div>
+    <!--end::Page-->
+</div>
+<!--end::Main-->
+
+
+<script>
+    kamaDatepicker('date1', { buttonsColor: "red" });
+
+    var customOptions = {
+        placeholder: "روز / ماه / سال"
+        , twodigit: true
+        , closeAfterSelect: true
+        // , nextButtonIcon: "fa fa-arrow-circle-right"
+        // , previousButtonIcon: "fa fa-arrow-circle-left"
+        , nextButtonIcon: "/adminassets/kamadatepicker/assets/timeir_next.png"
+        , previousButtonIcon: "/adminassets/kamadatepicker/assets/timeir_prev.png"
+        , buttonsColor: "blue"
+        , forceFarsiDigits: true
+        , markToday: true
+        , markHolidays: true
+        , holidays: HOLIDAYS // from kamadatepicker.holidays.js
+        , highlightSelectedDay: true
+        , sync: true
+        , gotoToday: true
+    }
+    kamaDatepicker('date2', customOptions);
+
+    kamaDatepicker('date3', {
+        nextButtonIcon: "assets/timeir_prev.png"
+        , previousButtonIcon: "assets/timeir_next.png"
+        , forceFarsiDigits: true
+        , markToday: true
+        , markHolidays: true
+        , highlightSelectedDay: true
+        , sync: true
+        , pastYearsCount: 0
+        , futureYearsCount: 3
+        , swapNextPrev: true
+        , holidays: HOLIDAYS // from kamadatepicker.holidays.js
+        , disableHolidays: true
+    });
+
+    kamaDatepicker('date4', {
+        position: 'top' // top, bottom or auto
+    });
+
+    kamaDatepicker('date5-1', {
+        position: 'auto' // top, bottom or auto
+        , parentId: 'date5-parent'
+    });
+    kamaDatepicker('date5-2', {
+        position: 'auto' // top, bottom or auto
+        , parentId: 'date5-parent'
+    });
+
+    // for testing sync functionallity
+    $("#date2").val("1311/10/01");
+
+    // init without ids inputs
+    document.querySelectorAll('#without-ids input').forEach(input => { kamaDatepicker(input); });
+</script>
+<!--begin::Global Config(global config for global جی اس scripts)-->
+<!--end::Page Scripts-->
+</body>
+<!--end::Body-->
+</html>
