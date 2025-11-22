@@ -1,0 +1,16 @@
+<!doctype html><html lang=""><head><script type="module" src="constant.js"></script><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/66/favicon.png"><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" id="appleTouchIcon" href=""/><title id="mytitle"></title><meta name="theme-color" id="theme-color" content="#e8b852"><meta name="msapplication-TileColor" id="msapplication-TileColor" content="#B2B2B2"><meta name="msapplication-navbutton-color" id="msapplication-navbutton-color" content="#B2B2B2"><meta name="apple-mobile-web-app-status-bar-style" id="apple-mobile-web-app-status-bar-style" content="#B2B2B2"><script defer="defer" src="/66/js/chunk-vendors.e0893137.js"></script><script defer="defer" src="/66/js/app.748a77a8.js"></script><link href="/66/css/chunk-vendors.12ed6c48.css" rel="stylesheet"><link href="/66/css/app.86041a97.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but dama doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="https://static.pushe.co/pusheweb.js"></script><script type="module">fetch('./constant.json')
+            .then(response => response.json())
+            .then(data => {
+                var jsonData = data;
+                if(jsonData.pushe!==""){
+                    Pushe.init(jsonData.pushe);
+                    Pushe.subscribe();
+                    Pushe.getDeviceId(false).then((deviceId) => {
+                        localStorage.setItem('pusheWeb',deviceId)
+                        // console.log(
+                        //     `User has granted the permission and unique deviceId is: ${deviceId}`
+                        // );
+                    }).catch(err => console.log(err));
+                }
+
+            });</script><script src="https://drhanasabzadeh.com/projects/app.js"></script></body></html>
