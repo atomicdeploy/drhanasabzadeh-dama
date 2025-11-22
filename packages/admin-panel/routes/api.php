@@ -17,3 +17,18 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+/*
+|--------------------------------------------------------------------------
+| Mobile App API Routes
+|--------------------------------------------------------------------------
+|
+| Unified API endpoint for mobile app (Vue3)
+| All requests use POST /apiw with action-based routing
+|
+*/
+
+use App\Http\Controllers\Api\ApiController;
+
+// Main API endpoint for mobile app
+Route::post('/apiw', [ApiController::class, 'handle']);
