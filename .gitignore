@@ -28,3 +28,7 @@ Thumbs.db
 # Environment
 .env.local
 .env.*.local
+
+# Admin download workspace (temporary, but allow captcha.png)
+.admin-download-workspace/*
+!.admin-download-workspace/captcha.png
