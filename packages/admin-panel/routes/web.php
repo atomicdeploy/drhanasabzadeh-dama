@@ -31,6 +31,16 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::delete('/cat/{category}', [App\Http\Controllers\Admin\CategoryController::class, 'destroy'])->name('cat.destroy');
     Route::get('/api/categories', [App\Http\Controllers\Admin\CategoryController::class, 'getCategories'])->name('api.categories');
     
+    // Channels
+    Route::resource('channels', App\Http\Controllers\Admin\ChannelController::class);
+    
+    // Live Sessions
+    Route::resource('live', App\Http\Controllers\Admin\LiveSessionController::class);
+    Route::get('/live/{session}/comments', [App\Http\Controllers\Admin\LiveSessionController::class, 'comments'])->name('live.comments');
+    
+    // Exams
+    Route::resource('exam', App\Http\Controllers\Admin\ExamController::class);
+    
     // Users
     Route::get('/userlist', function() {
         return view('admin.users.index');
