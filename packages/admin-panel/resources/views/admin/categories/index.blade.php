@@ -13,7 +13,7 @@
                     <h3 class="card-label">لیست دسته‌بندی‌ها</h3>
                 </div>
                 <div class="card-toolbar">
-                    <a href="{{ route('admin.categories.create') }}" class="btn btn-primary font-weight-bolder">
+                    <a href="{{ route('admin.cat.create') }}" class="btn btn-primary font-weight-bolder">
                         <i class="fa fa-plus"></i>
                         دسته‌بندی جدید
                     </a>
@@ -22,7 +22,7 @@
             
             <div class="card-body">
                 <!-- Search and Filters -->
-                <form method="GET" action="{{ route('admin.categories.index') }}" class="mb-5">
+                <form method="GET" action="{{ route('admin.cat.index') }}" class="mb-5">
                     <div class="row">
                         <div class="col-md-4">
                             <input type="text" name="search" class="form-control" placeholder="جستجو..." value="{{ request('search') }}">
@@ -39,7 +39,7 @@
                                 <i class="fa fa-search"></i>
                                 جستجو
                             </button>
-                            <a href="{{ route('admin.categories.index') }}" class="btn btn-secondary">
+                            <a href="{{ route('admin.cat.index') }}" class="btn btn-secondary">
                                 پاک کردن
                             </a>
                         </div>
@@ -115,11 +115,11 @@
                                         <span class="badge badge-info">{{ $category->courses->count() }}</span>
                                     </td>
                                     <td>
-                                        <a href="{{ route('admin.categories.edit', $category) }}" class="btn btn-sm btn-icon btn-light-primary" title="ویرایش">
+                                        <a href="{{ route('admin.cat.edit', $category) }}" class="btn btn-sm btn-icon btn-light-primary" title="ویرایش">
                                             <i class="fa fa-edit"></i>
                                         </a>
                                         
-                                        <form action="{{ route('admin.categories.destroy', $category) }}" method="POST" class="d-inline" onsubmit="return confirm('آیا از حذف این دسته‌بندی اطمینان دارید؟');">
+                                        <form action="{{ route('admin.cat.destroy', $category) }}" method="POST" class="d-inline" onsubmit="return confirm('آیا از حذف این دسته‌بندی اطمینان دارید؟');">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-sm btn-icon btn-light-danger" title="حذف">

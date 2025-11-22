@@ -21,12 +21,31 @@ Route::get('/', function () {
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
     
-    // Categories
-    Route::resource('categories', App\Http\Controllers\Admin\CategoryController::class);
-    Route::get('/api/categories', [App\Http\Controllers\Admin\CategoryController::class, 'getCategories'])->name('categories.api');
+    // Categories (using 'cat' to match production)
+    Route::get('/cat', [App\Http\Controllers\Admin\CategoryController::class, 'index'])->name('cat.index');
+    Route::get('/cat/create', [App\Http\Controllers\Admin\CategoryController::class, 'create'])->name('cat.create');
+    Route::post('/cat', [App\Http\Controllers\Admin\CategoryController::class, 'store'])->name('cat.store');
+    Route::get('/cat/{category}', [App\Http\Controllers\Admin\CategoryController::class, 'show'])->name('cat.show');
+    Route::get('/cat/{category}/edit', [App\Http\Controllers\Admin\CategoryController::class, 'edit'])->name('cat.edit');
+    Route::put('/cat/{category}', [App\Http\Controllers\Admin\CategoryController::class, 'update'])->name('cat.update');
+    Route::delete('/cat/{category}', [App\Http\Controllers\Admin\CategoryController::class, 'destroy'])->name('cat.destroy');
+    Route::get('/api/categories', [App\Http\Controllers\Admin\CategoryController::class, 'getCategories'])->name('api.categories');
     
-    // Future routes for other entities
-    // Route::resource('courses', App\Http\Controllers\Admin\CourseController::class);
-    // Route::resource('teachers', App\Http\Controllers\Admin\TeacherController::class);
-    // Route::resource('orders', App\Http\Controllers\Admin\OrderController::class);
+    // Users
+    Route::get('/userlist', function() {
+        return view('admin.users.index');
+    })->name('userlist');
+    
+    // Teachers
+    Route::get('/teachers', function() {
+        return view('admin.teachers.index');
+    })->name('teachers.index');
+    
+    // Orders
+    Route::get('/order', function() {
+        return view('admin.orders.index');
+    })->name('order.index');
+    
+    // Future routes placeholder
+    // More routes will be added as controllers are implemented
 });

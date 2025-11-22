@@ -9,16 +9,10 @@ use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index(Request $request)
     {
         $query = Category::with('parent', 'children');
 
-        // Search
         if ($request->filled('search')) {
             $search = $request->search;
             $query->where(function($q) use ($search) {
@@ -27,17 +21,10 @@ class CategoryController extends Controller
             });
         }
 
-        // Filter by status
         if ($request->filled('status')) {
             $query->where('status', $request->status);
         }
 
-        // Filter by parent
-        if ($request->filled('parent_id')) {
-            $query->where('parent_id', $request->parent_id);
-        }
-
-        // Sort
         $sortField = $request->get('sort', 'order');
         $sortDirection = $request->get('direction', 'asc');
         $query->orderBy($sortField, $sortDirection);
@@ -47,23 +34,12 @@ class CategoryController extends Controller
         return view('admin.categories.index', compact('categories'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         $parentCategories = Category::root()->active()->orderBy('order')->get();
         return view('admin.categories.create', compact('parentCategories'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -77,7 +53,6 @@ class CategoryController extends Controller
             'status' => 'required|in:active,inactive',
         ]);
 
-        // Auto-generate slug if not provided
         if (empty($validated['slug'])) {
             $validated['slug'] = Str::slug($validated['name_fa']);
         }
@@ -85,28 +60,16 @@ class CategoryController extends Controller
         $category = Category::create($validated);
 
         return redirect()
-            ->route('admin.categories.index')
+            ->route('admin.cat.index')
             ->with('success', 'دسته‌بندی با موفقیت ایجاد شد');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show(Category $category)
     {
         $category->load('parent', 'children', 'courses');
         return view('admin.categories.show', compact('category'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Category $category)
     {
         $parentCategories = Category::root()
@@ -118,13 +81,6 @@ class CategoryController extends Controller
         return view('admin.categories.edit', compact('category', 'parentCategories'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Category $category)
     {
         $validated = $request->validate([
@@ -138,7 +94,6 @@ class CategoryController extends Controller
             'status' => 'required|in:active,inactive',
         ]);
 
-        // Prevent category from being its own parent
         if (isset($validated['parent_id']) && $validated['parent_id'] == $category->id) {
             return back()->withErrors(['parent_id' => 'دسته‌بندی نمی‌تواند والد خودش باشد']);
         }
@@ -146,24 +101,16 @@ class CategoryController extends Controller
         $category->update($validated);
 
         return redirect()
-            ->route('admin.categories.index')
+            ->route('admin.cat.index')
             ->with('success', 'دسته‌بندی با موفقیت به‌روزرسانی شد');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Category $category)
     {
-        // Check if category has courses
         if ($category->courses()->count() > 0) {
             return back()->withErrors(['error' => 'این دسته‌بندی دارای دوره است و نمی‌توان آن را حذف کرد']);
         }
 
-        // Move children to parent or root
         if ($category->children()->count() > 0) {
             $category->children()->update(['parent_id' => $category->parent_id]);
         }
@@ -171,16 +118,10 @@ class CategoryController extends Controller
         $category->delete();
 
         return redirect()
-            ->route('admin.categories.index')
+            ->route('admin.cat.index')
             ->with('success', 'دسته‌بندی با موفقیت حذف شد');
     }
 
-    /**
-     * Get categories as JSON for AJAX requests.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function getCategories(Request $request)
     {
         $query = Category::active();
@@ -194,60 +135,5 @@ class CategoryController extends Controller
         $categories = $query->orderBy('order')->get(['id', 'name_fa', 'name_en']);
 
         return response()->json($categories);
-    }
-}
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
     }
 }
