@@ -41,6 +41,16 @@ Route::prefix('admin')->name('admin.')->group(function () {
     // Exams
     Route::resource('exam', App\Http\Controllers\Admin\ExamController::class);
     
+    // Channel Posts
+    Route::resource('channelposts', App\Http\Controllers\Admin\ChannelPostController::class);
+    
+    // Discounts
+    Route::resource('discount', App\Http\Controllers\Admin\DiscountController::class);
+    Route::post('/api/discount/validate', [App\Http\Controllers\Admin\DiscountController::class, 'validateCode'])->name('api.discount.validate');
+    
+    // Stories
+    Route::resource('story', App\Http\Controllers\Admin\StoryController::class);
+    
     // Users
     Route::get('/userlist', function() {
         return view('admin.users.index');
