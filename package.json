@@ -1,0 +1,23 @@
+{
+  "name": "drhanasabzadeh-dama-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dr. Hana Sabzadeh monorepo - mobile app and admin panel",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build:share && npm run build:mobile && npm run build:admin",
+    "build:share": "npm run build --workspace=@yektayar/share",
+    "build:mobile": "npm run build --workspace=dama-mobile-app",
+    "build:admin": "echo 'Admin panel (Laravel) build skipped'",
+    "dev:mobile": "npm run serve --workspace=dama-mobile-app",
+    "lint:mobile": "npm run lint --workspace=dama-mobile-app",
+    "test": "npm test --workspaces --if-present"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  }
+}

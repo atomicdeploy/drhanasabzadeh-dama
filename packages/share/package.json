@@ -1,0 +1,32 @@
+{
+  "name": "@yektayar/share",
+  "version": "1.0.0",
+  "description": "Shared utilities for Dr. Hana Sabzadeh applications",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc --project tsconfig.json --module es2015 --outDir dist",
+    "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir dist",
+    "dev": "tsc --watch --project tsconfig.json",
+    "lint": "eslint src --ext .ts",
+    "test": "echo 'No tests yet'"
+  },
+  "keywords": [
+    "shared",
+    "utilities",
+    "monorepo"
+  ],
+  "author": "Dr. Hana Sabzadeh Team",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^4.9.0",
+    "eslint": "^8.0.0",
+    "@types/node": "^18.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
