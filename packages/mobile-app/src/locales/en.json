@@ -1,0 +1,10 @@
+{
+  "Home": {
+    "title": "Home",
+    "welcome": "Welcome"
+  },
+  "Course": {
+    "title": "Courses",
+    "search": "Search"
+  }
+}

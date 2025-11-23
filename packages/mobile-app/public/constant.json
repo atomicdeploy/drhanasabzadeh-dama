@@ -1,0 +1,16 @@
+{
+  "c_baseurl" : "https://panel.drhanasabzadeh.ir",
+  "c_appname_en" : "DrHanasabzadeh",
+  "c_appname" : "دکتر مریم حناسابزاده",
+  "c_walleturl" : "www.drhanasabzadeh.ir",
+  "c_basecolor" : "#e8b852",
+  "c_seccolor" : "##e8b852ba",
+  "c_directory" : "66",
+  "pushe" : "5dn02k1260341wme",
+  "_comments": [
+    "لوگو",
+    "فایل manifest",
+    "فایل htaccess",
+    "رنگ index"
+  ]
+}

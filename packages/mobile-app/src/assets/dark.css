@@ -1,0 +1,11 @@
+/* Dark theme styles */
+:root {
+  --background-color: #1e1e1e;
+  --text-color: #ffffff;
+  --border-color: #404040;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
