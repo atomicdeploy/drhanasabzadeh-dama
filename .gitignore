@@ -1,0 +1,34 @@
+# Download workspace (temporary)
+.download-workspace/
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production builds
+dist/
+build/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env.local
+.env.*.local
+
+# Admin download workspace (temporary, but allow captcha.png)
+.admin-download-workspace/*
+!.admin-download-workspace/captcha.png
