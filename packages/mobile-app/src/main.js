@@ -18,9 +18,10 @@ import VueVideoPlayer from 'vue-video-player'
 // require videojs style
 import 'video.js/dist/video-js.css'
 // end other video player
-import { createI18n } from 'vue-i18n'
-const i18n = createI18n({
-    locale: 'en', // زبان پیش‌فرض
+import { createI18nWithLogging } from './plugins/i18n'
+const i18n = createI18nWithLogging({
+    locale: 'fa', // زبان پیش‌فرض
+    fallbackLocale: 'en',
     messages: {
         en: require('./locales/en.json'),
         fa: require('./locales/fa.json'),

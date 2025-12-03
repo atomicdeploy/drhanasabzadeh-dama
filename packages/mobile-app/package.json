@@ -5,8 +5,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "npm run validate:i18n && vue-cli-service build",
+    "build:skip-validation": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "validate:i18n": "node scripts/validate-i18n.js"
   },
   "dependencies": {
     "vue": "^3.2.0",
